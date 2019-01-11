@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Did you know...</title>
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+
+
+
+
+
+
+<style>
+		h1 {text-align: center;
+			font-family: Georgia;
+			color: #993300;
+			font-size: 60px;
+			margin-bottom: 25px;
+
+		}
+
+		
+		body{
+			background-image: url(images2/didyouknow1.jpg);
+			background-repeat: no-repeat;
+		}
+
+		.slider{
+			color: #CC0066;
+  			height: 100%;
+  			width: 100%
+		}
+
+
+		#prev{
+			background-color: #6666CC;
+			opacity:0.7;
+			width: 175px;
+			height:50px;
+			top:240px;
+			left:-10px;
+			border-radius: 12px;
+			border-color: #660033;
+		}
+
+		#next {
+			background-color: #6666CC;
+			opacity:0.7; 
+			width: 175px;
+			height:50px;
+			top:240px;
+			left:-110px;
+			border-radius: 12px;
+			border-color: #660033;
+			float: right;
+		}
+		
+		#nav{
+			z-index: 150;
+		}
+		h2{
+			background: linear-gradient(transparent, #CC99CC);
+		}
+
+
+
+	</style>
+</head>
+
+		
+
+<body>
+
+	<div>
+		<form id="button">
+  		<input type="button" class="btn active btn-block btn-success"" value="Back to home" onclick="history.back()">
+		</form>
+	</div><br><br>
+	
+	
+
+
+	<header>
+		<h1>...these awesome facts about Coffee?</h1>
+	</header><br><br><br>
+
+
+	
+
+<div class="container">
+
+	<ul id="nav">
+		<button id="prev">Previous-Double click</button>
+		<button id="next">Next-Double click</button>
+	</ul>
+
+	<div class="slider">
+		<h2>Did you know that coffee doesn’t just give us humans a buzz? No siree. BEES get a buzz when drinking coffee and what’s even more interesting is that it supercharges their long-term memory! How else do you think they find their way back to the same plant over and over again?</h2><br>
+
+		<h2>During Turkish wedding ceremonies, grooms were made to vow to always provide their brides with coffee. Failure to do so could result in divorce.</h2><br>
+
+		<h2>In ancient Arab culture, a woman could only divorce her husband if he didn’t like coffee enough. Talk about extreme love for coffee!</h2><br>
+
+		<h2>Beethoven was such an ardent coffee lover that he’d count 60 beans per cup before making his brew.</h2><br>
+
+		<h2>Exfoliate your skin with moist coffee grounds at least twice a week, rinse and watch your face glow.</h2><br>
+
+		<h2>In 1511, coffee was banned in Mecca on the grounds of preventing free thinking and people getting together to hang out.</h2><br>
+
+		<h2>There has been an indication that coffee can actually be used to fuel a car. Not now, of course, but maybe someday in the future. Kind of reassuring, don’t you think, to imagine a world where one day we might never have to worry about running out of fuel?</h2><br>
+
+		<h2>Teddy Roosevelt drank a gallon of coffee every day. (Not something you’d want to try today. Just putting it out there.</h2><br>
+
+		<h2>Coffee was so scarce in Germany during WWII that ‘coffee bombs’ were dropped from planes to turn the people against the government.</h2><br>
+
+		<h2>During WWII American soldiers would order their espresso watered down because it was too strong for them.</h2><br>
+	</div><br><br><br>
+
+
+
+</div>
+
+
+
+<script>
+	$(document).ready(function(){
+		$(".slider").cycle({
+			fx: "fade",
+			prev: "#prev",
+			next: "#next",
+		});
+	});
+
+	console.log($.fn.jquery);
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
